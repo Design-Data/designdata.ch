@@ -18,9 +18,9 @@ RTX 4000, CSS, XML, JavaScript">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://www.designdata.ch/styles/style.css">
-<link rel="stylesheet" href="https://www.designdata.ch/styles/logo.css">
-<link rel="shortcut icon" href="https://www.designdata.ch/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="/style.css">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
 
 </head>
 
@@ -75,7 +75,7 @@ RTX 4000, CSS, XML, JavaScript">
 		<section class="intro" id="i">
 			<div class="fg">
 				<h1 class="fg Logo l">DESIGN</h1>
-				<img class="Logo Icon" src="Main img/Icon.svg" alt="">
+				<img class="Logo Icon" src="https://www.designdata.ch/img/Icon.svg" alt="">
 				<h1 class="fg Logo r">DATA</h1>
 			</div>
 			<h2 class="fg">get more from your CAD...
@@ -86,7 +86,7 @@ RTX 4000, CSS, XML, JavaScript">
 		</section>
 		<section id="r">
 			<a href="https://shop.cad.parts">
-				<img src="https://www.designdata.ch/img/ShopProducts.png" alt="DesignData Shop Produkte"
+				<img src="https://www.designdata.ch/img/ShopProducts.webp" alt="DesignData Shop Produkte"
 					style="position: relative; width: 25vw; height: 30vh; object-fit: contain; background-color: rgba(5, 5, 5, 0.25); top: 10%; left: 2%;">
 			</a>
 		</section>
@@ -96,7 +96,7 @@ RTX 4000, CSS, XML, JavaScript">
 				<a href="https://cad.vision">
 					<figure class="vision mask" aria-label="cad.vision" style="top: 0px; left: 0px;">
 						<img class="fig blur darken mask inv"
-							src="https://www.designdata.ch/img/Solidworks_2019_Header.jpg"
+							src="https://www.designdata.ch/img/Solidworks_2019_Header.webp"
 							alt="DesignData SubSite CAD vision Banner https://cad.vision"
 							style="object-fit: cover;top: 0px; left: 0px;">
 						<figcaption class="fg hv shadow">cad.vision</figcaption>
@@ -105,7 +105,7 @@ RTX 4000, CSS, XML, JavaScript">
 				<a href="https://cad.parts">
 					<figure class="parts mask darken" aria-label="cad.parts" style="  top: 0px; left: 0px;">
 						<img class="fig blur darken mask inv"
-							src="https://www.designdata.ch/img/Autodesk_Inventor__2021_Dark_Wheel.jpg"
+							src="https://www.designdata.ch/img/Autodesk_Inventor__2021_Dark_Wheel.webp"
 							alt="DesignData SubSite CAD Parts Banner https://cad.parts"
 							style="object-fit: cover;top: 0px; left: 0px;">
 						<figcaption class="fg hv shadow">cad.parts</figcaption>
@@ -116,7 +116,7 @@ RTX 4000, CSS, XML, JavaScript">
 				<a href="https://inventor.design">
 					<figure class="inv mask darken" aria-label="inventor.design" style="  top: 0px; left: 0px;">
 						<img class="fig blur darken mask inv"
-							src="https://www.designdata.ch/img/Autodesk_Inventor_Professional_2021edit.jpg"
+							src="https://www.designdata.ch/img/Autodesk_Inventor_Professional_2021.webp"
 							alt="DesignData SubSite Autodesk Inventor Banner https://inventor.design"
 							style="object-fit: cover;  top: 0px; left: 0px;">
 						<figcaption class="fg hv shadow">inventor.design</figcaption>
@@ -125,7 +125,7 @@ RTX 4000, CSS, XML, JavaScript">
 				</a>
 				<a href="https://sld.works">
 					<figure class="sld mask" aria-label="sld.works" style="top: 0px; left: 0px;">
-						<img class=" fig blur darken mask sld" src="https://www.designdata.ch/img/Solidworks_comp.jpg"
+						<img class=" fig blur darken mask sld" src="https://www.designdata.ch/img/Solidworks_model.webp"
 							alt="Banner of DesignData Solidworks SubSite https://sld.works"
 							style="  top: 0px; left: 0px;">
 						<figcaption class="fg hv shadow">sld.works</figcaption>
@@ -160,7 +160,7 @@ RTX 4000, CSS, XML, JavaScript">
 				<h3 class="map fg" style="padding: 0.25em; position: relative; top: 0px; left: 0.0em; height: 2em;">
 					Karte:</h3>
 				<a href="https://goo.gl/maps/9NkSuSFEy8bbyPH79" class="map"><img
-						src="https://designdata.ch/img/mapbasel256.png" alt="Map Florastrasse 11 basel" style="width: 45vw;
+						src="https://designdata.ch/img/mapbasel256.webp" alt="Map Florastrasse 11 basel" style="width: 45vw;
 					height: 15vh; opacity: 0.4; object-fit: cover; position: relative; top: 0px; left: 0.0em;"></a>
 
 			</section>
@@ -177,28 +177,29 @@ RTX 4000, CSS, XML, JavaScript">
 						class="far fa-envelope"></span></a>
 					<a class="left" href="mailto:info@designdata.ch">info@designata.ch</a>
 			</section>
+
 			<section id="fc">
-				<span style="cursor:pointer;" onclick="openNav()">
+				<span style="cursor:pointer;" onclick="on()">
 					Copyright & Datenschutz
 				</span>
 			</section>
 		</div>
-
-		<div id="disclaimer" class="overlay">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-			<embed class="overlay-content" src="https://www.designdata.ch/DesignData_Datenschutz_Copyright.txt"
-				type="text/plain" style=" height: 95vh; width:95vw; background-color: white; ">
-
-		</div>
 	</div>
+
+	<div id="overlay" onclick="off()">
+		<embed class="overlay-content" src="https://www.designdata.ch/DesignData_Datenschutz_Copyright.txt"
+			type="text/plain" style=" height: 95vh; width:95vw; background-color: white; ">
+
+	</div>
+
+
 	<script>
-		function openNav() {
-			document.getElementById("disclaimer").style.height = "100%";
+		function on() {
+			document.getElementById("overlay").style.display = "block";
 		}
 
-		function closeNav() {
-			document.getElementById("disclaimer").style.height = "0%";
+		function off() {
+			document.getElementById("overlay").style.display = "none";
 		}
 	</script>
 </body>
