@@ -1,0 +1,102 @@
+.logo {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.squaretop {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 67%;
+  height: 67%;
+  z-index: 0;
+  border-radius: 0% 16% 16% 0%;
+  background-image: linear-gradient(rgba(32, 83, 177, 1) 0%,
+      rgba(26, 210, 20, 1) 100%);
+  background-size: cover;
+}
+
+.squaredown {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  width: 67%;
+  height: 67%;
+  z-index: 0;
+  border-radius: 0% 16% 16% 0%;
+  background-image: linear-gradient(rgba(32, 83, 177, 1) 1%,
+      rgba(26, 210, 20, 1) 100%);
+  background-size: cover;
+}
+
+.inlay {
+  z-index: 0;
+
+  position: absolute;
+  top: 16%;
+  left: 16%;
+  width: 67%;
+  height: 67%;
+  background-color: rgb(0, 0, 0);
+  border: solid 0 rgba(242, 243, 245, 0.1additive);
+  border-radius: 0% 0% 18% 0;
+}
+
+.center {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  z-index: 30;
+  width: 34%;
+  height: 34%;
+  border-radius: 0% 0% 16% 0;
+  background-image: linear-gradient(rgba(32, 83, 177, 1) 0%,
+      rgba(26, 210, 20, 1) 100%);
+  background-size: cover;
+}
+
+.bg3 {
+  position: absolute;
+  left: 16%;
+  top: 16%;
+  z-index: 5;
+  width: 51%;
+  height: 51%;
+  border-radius: 0% 0% 16.66% 0%;
+  background-image: linear-gradient(to top,
+      rgba(32, 83, 177, 0.2) 0%,
+      rgba(26, 210, 20, 0.3) 100%);
+  background-size: cover;
+}
+
+.bg2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 5;
+  width: 83%;
+  height: 83%;
+  border-radius: 0% 16.66% 14% 0%;
+  background-image: linear-gradient(rgba(32, 83, 177, 0.5) 00%,
+      rgba(255, 255, 255, 0) 20%);
+  background-size: cover;
+  background: linear-gradient(45deg,
+      rgba(26, 120, 194, 0.3) 0%,
+      rgba(0, 255, 47, 0.2) 100%);
+}
+
+.bg4 {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  z-index: 5;
+  width: 50%;
+  height: 50%;
+  border-radius: 0% 0% 24% 0%;
+  background-image: linear-gradient(rgba(32, 83, 177, 0.5) 00%,
+      transparent 20%,
+      transparent 50%,
+      rgba(239, 243, 47, 0.6) 100%);
+  background-size: cover;
+}
