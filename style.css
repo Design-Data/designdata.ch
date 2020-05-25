@@ -1,539 +1,581 @@
-	 @font-face {
-	 	font-family: open samns;
-	 	src: url('fonts/OpenSans-Regular.ttf');
-	 }
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("https://www.designdata.ch/fonts/OpenSans-Light.ttf") format("truetype");
+	font-weight: normal;
+}
 
-	 @font-face {
-	 	font-family: Delicious;
-	 	font-weight: lighter;
-	 	src: url('fonts/OpenSans-Light.ttf');
-	 }
+* {
+	box-sizing: border-box;
+	font-family: "OpenSans-Light",
+		sans-serif;
+	
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
 
-	 * {
+body {
+	background-image: linear-gradient(to right, rgba(9, 87, 13, 0.377) 0%, rgba(0, 103, 134, 0.336) 51%, rgba(13, 26, 143, 0.288) 100%);
+	background-color: #000000;
+	background-size: cover;
+	font-size: 2.8vmin;
+	line-height: 1.25em;
+	color: #ffffff;
+	
+	margin: 0;
+	padding: 0px;
+	word-wrap: break-word !important;
+	font-family: "OpenSans-Light", sans-serif;
+}
 
-	 	box-sizing: border-box;
-	 	font-family: 'open sans', sans-serif;
-	 	font-weight: 300;
-	 	padding: 0px;
-	 	margin: 0px;
-	 	text-decoration: none;
-	 }
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+	color: #FFF;
+	vertical-align: middle;
+	text-decoration: none;
+	
+	font-family: "OpenSans-Light";
+}
 
-	 body {
-	 	background-image: linear-gradient(to right, rgba(9, 87, 13, 0.377) 0%, rgba(0, 103, 134, 0.336) 51%, rgba(13, 26, 143, 0.288) 100%);
-	 	background-color: #000000;
-	 	background-size: cover;
-	 	font-size: 2.8vmin;
-	 	line-height: 1.25em;
-	 	color: #ffffff;
-	 	margin: 0;
-	 	padding: 0px;
-	 	word-wrap: break-word !important;
-	 	font-family: 'Open Sans', sans-serif;
-	 }
+figcaption {
+	font-size: 3em;
+	text-decoration: none;
+}
 
-	 h1 {
-	 	font-size: 2.5em;
-	 	text-align: center;
-	 	color: #FFF;
-	 	vertical-align: middle;
-	 	text-decoration: none;
-	 }
+h2 {
+	font-size: 2em;
+	text-align: center;
+	color: #FFF;
+	vertical-align: middle;
+	padding: 0.5em;
+	
+	font-family: "OpenSans-Light";
 
-	 figcaption {
-	 	font-size: 3em;
-	 	text-decoration: none;
-	 }
+}
 
-	 h2 {
-	 	font-size: 2em;
-	 	text-align: center;
-	 	color: #FFF;
-	 	vertical-align: middle;
-	 	padding: 0.5em;
-	 }
+h3 {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	text-align: left;
+	color: #FFF;
+	padding: 0.25em 1em;
+	font-weight: lighter;
 
-	 h3 {
-	 	font-size: 1.25em;
-	 	line-height: 1.5em;
-	 	text-align: left;
-	 	color: #FFF;
-	 	padding: 0.25em 1em;
-	 }
+}
 
-	 h3 a {
-	 	color: #FFF;
-	 }
+h3 a {
+	color: #FFF;
+}
 
-	 a {
-	 	color: #FFF;
-	 }
+a {
+	color: #FFF;
+}
 
 
-	 p {
-	 	text-align: center;
-	 }
+p {
+	text-align: center;
+}
 
-	 .toggle,
-	 [id^=drop] {
-	 	display: none;
-	 }
+.toggle,
+[id^=drop] {
+	display: none;
+}
 
-	 /* Giving a background-color to the nav container. */
-	 nav {
-	 	position: fixed;
-	 	z-index: 10;
-	 	height: 1.5em;
-	 	width: 100vw;
-	 	top: 0em;
-	 	left: 0em;
-	 	margin: 0;
-	 	padding: 0em;
-	 	background-color: #1313133d;
-	 }
+/* Giving a background-color to the nav container. */
+nav {
+	position: fixed;
+	z-index: 10;
+	height: 1.5em;
+	width: 100vw;
+	top: 0em;
+	left: 0em;
+	margin: 0;
+	padding: 0em;
+	background-color: #03030375;
+}
 
-	 #logo {
-	 	display: block;
-	 	padding: 0em;
-	 	position: fixed;
-	 	top: 0em;
-	 	left: 0.25em;
-	 	font-size: 1em;
-	 }
+#logo {
+	display: block;
+	padding: 0em;
+	position: fixed;
+	top: 0em;
+	left: 0.25em;
+	font-size: 1em;
+}
 
-	 .toplogo {
-	 	height: 1.5em;
-	 	width: 1.5em;
-	 	overflow: hidden;
-	 }
+.toplogo {
+	height: 1.5em;
+	width: 1.5em;
+	overflow: hidden;
+}
 
-	 .toplogobrand {
-	 	position: fixed;
-	 	top: 0em;
-	 	left: 2em;
-	 	font-size: 1em;
-	 }
+.toplogobrand {
+	position: fixed;
+	top: 0em;
+	left: 2em;
+	font-size: 1em;
+}
 
-	 /* Since we'll have the "ul li" "float:left"
+/* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
-	 nav:after {
-	 	content: "";
-	 	display: table;
-	 	clear: both;
-	 }
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
-	 /* Removing padding, margin and "list-style" from the "ul",
+/* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
-	 nav ul {
-	 	float: right;
-	 	font-size: 1em;
-	 	padding: 0px;
-	 	margin: 0;
-	 	list-style: none;
-	 	position: relative;
-	 }
+nav ul {
+	float: right;
+	font-size: 1em;
+	padding: 0px;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
 
-	 /* Positioning the navigation items inline */
-	 nav ul li {
-	 	padding: 0px;
-	 	margin: 0px;
-	 	display: inline-block;
-	 	float: left;
-	 	/* background-color: #1313133d; */
-	 }
+/* Positioning the navigation items inline */
+nav ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	/* background-color: #1313133d; */
+}
 
-	 /* Styling the links */
-	 nav a {
-	 	display: block;
-	 	color: rgba(230, 230, 230, 0.897);
-	 	font-size: 1em;
-	 	text-decoration: none;
-	 	padding: 0.25em 1em 0.25em 1em;
-	 	margin: 0em;
-	 	line-height: 1em;
-	 }
+/* Styling the links */
+nav a {
+	display: block;
+	color: rgba(230, 230, 230, 0.897);
+	font-size: 1em;
+	text-decoration: none;
+	padding: 0.25em 1em 0.25em 1em;
+	margin: 0em;
+	line-height: 1em;
+}
 
-	 nav ul li ul li:hover {
-	 	background: #dfdfdf3d;
-	 }
+nav ul li ul li:hover {
+	background: #dfdfdf3d;
+}
 
-	 /* Background color change on Hover */
-	 nav a:hover {
-	 	background-color: #f1f1f11c;
-	 }
+/* Background color change on Hover */
+nav a:hover {
+	background-color: #f1f1f11c;
+}
 
-	 /* Hide Dropdowns by Default
+/* Hide Dropdowns by Default
  * and giving it a position of absolute */
-	 nav ul ul {
-	 	display: none;
-	 	position: absolute;
-	 	/* has to be the same number as the "line-height" of "nav a" */
-	 	top: 1.75em;
-	 }
+nav ul ul {
+	display: none;
+	position: absolute;
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 1em;
+}
 
-	 /* Display Dropdowns on Hover */
-	 nav ul li:hover>ul {
-	 	display: inherit;
-	 }
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+	display: inherit;
+}
 
-	 /* Fisrt Tier Dropdown */
-	 nav ul ul li {
-	 	width: 300px;
-	 	float: none;
-	 	display: list-item;
-	 	position: relative;
-	 }
+/* First Tier Dropdown */
+nav ul ul li {
+	width: 300px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
 
-	 /* Second, Third and more Tiers
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
-	 nav ul ul ul li {
-	 	position: relative;
-	 	top: -1.2em;
-	 	/* has to be the same number as the "width" of "nav ul ul li" */
-	 	left: 170px;
-	 }
+nav ul ul ul li {
+	position: relative;
+	top: -1em;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left: 300px;
+}
 
-	 /* Change ' +' in order to change the Dropdown symbol */
-	 li>a:after {
-	 	content: '';
-	 }
+/* Change ' +' in order to change the Dropdown symbol */
+li>a:after {
+	content: '';
+}
 
-	 li>a:only-child:after {
-	 	content: '';
-	 }
+li>a:only-child:after {
+	content: '';
+}
 
-	 /* Media Queries
+
+
+.main {
+	max-width: 100vw;
+	overflow: hidden;
+	display: grid;
+	grid-template-areas:
+		"l i i r "
+		"a a a a"
+		"b b b b"
+		"f f f f";
+}
+
+section#i {
+	grid-area: i;
+	height: 20vh;
+	text-align: center;
+	margin-top: 3em;
+	max-height: 20vh;
+}
+
+.Logo {
+	text-align: center;
+	display: inline;
+	vertical-align: middle;
+}
+
+.intro img {
+	text-align: center;
+	width: 6em;
+	height: 6em;
+}
+
+section#r {
+	grid-area: r;
+	margin-top: 2em;
+	max-height: 20vh;
+}
+
+section#l {
+	grid-area: l;
+	margin-top: 2em;
+	max-height: 20vh;
+}
+
+section#a {
+	top: 20vh;
+	grid-area: a;
+	height: 85vh;
+}
+
+section#b {
+	grid-area: b;
+	height: 2vh;
+}
+
+.categories {
+	overflow: hidden;
+	position: relative;
+	display: flexbox;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	object-fit: cover
+}
+
+.categories a {
+	padding: 0;
+	margin: 0;
+}
+
+figure {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	min-width: 100%;
+	height: 15vh;
+	margin: 0em;
+	padding: 0em;
+	transition: all 0.6S;
+}
+
+figure:hover {
+	height: 40vh;
+}
+
+.fig {
+	display: flex;
+	min-width: 100%;
+	height: 15vh;
+	object-position: center;
+	object-fit: cover;
+	transition: all 0.6S;
+}
+
+.fig:hover {
+	height: 40vh;
+}
+
+
+figcaption {
+	display: block;
+	position: relative;
+	width: fit-content;
+	top: -10vh;
+	left: 1em;
+	font-size: 2.2em;
+	z-index: 10;
+}
+
+figcaption:hover {
+	top: inherit;
+}
+
+.darken {
+	filter: brightness (0.3);
+}
+
+.darken:hover {
+	filter: brightness (0.8);
+}
+
+.blur {
+	filter: blur(15px);
+}
+
+.blur:hover {
+	filter: blur(0);
+}
+
+.mask {
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.mask:hover {
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1) 100%);
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 01) 100%);
+}
+
+section#b {
+	grid-area: b;
+}
+
+.footer {
+	grid-area: f;
+	background-color: #03030375;
+	background-size: cover;
+	display: grid;
+	font-size: 0.9em;
+	grid-template-areas:
+		"ft fs fs "
+		"fm fa1 fa2"
+		"fc fc fc ";
+}
+
+section#ft {
+	grid-area: ft;
+	line-height: 1.5em;
+	text-align: left;
+	height: 1.5em;
+}
+
+section#fs {
+	grid-area: fs;
+	line-height: 1.5em;
+	text-align: left;
+	padding: 0.25em 1em;
+}
+
+.social {
+	grid-area: fs;
+	line-height: 1.5em;
+	text-align: left;
+	padding: 0.25em;
+}
+
+section#fm {
+	position: static;
+	grid-area: fm;
+	width: 50vw;
+	margin-top: 0.25em;
+	top: 0px;
+	left: 0px;
+}
+
+section#fa1 {
+	grid-area: fa1;
+	width: 25vw;
+	text-align: left;
+}
+
+section#fa2 {
+	grid-area: fa2;
+	width: 25vw;
+	text-align: left;
+}
+
+.left {
+	text-align: left;
+}
+
+
+#fc {
+	grid-area: fc;
+	text-align: center;
+	height: 1.5em;
+	padding: 0.25;
+}
+
+#overlay {
+	overflow: hidden;
+	position: fixed;
+	display: none;
+	width: 90vw;
+	height: 90vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* Media Queries
 --------------------------------------------- */
-	 @media all and (max-width : 768px) {
-	 	#logo * {
-	 		display: none;
-	 		padding: 0;
-	 		width: 100%;
-	 		text-align: center;
-	 		float: none;
-	 	}
+@media all and (max-width : 330px) {
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+}
 
-	 	nav {
-	 		margin: 0;
-	 	}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.example {
+		background: red;
+	}
+}
 
-	 	/* Hide the navigation menu by default */
-	 	/* Also hide the  */
-	 	.toggle+a,
-	 	.menu {
-	 		display: none;
-	 	}
-
-	 	/* Stylinf the toggle lable */
-	 	.toggle {
-	 		display: block;
-	 		background-color: #00000025;
-	 		padding: 0px 0px;
-	 		color: #FFF;
-	 		font-size: 1em;
-	 		text-decoration: none;
-	 		border: none;
-	 	}
-
-	 	.toggle:hover {
-	 		background-color: #ffffff13;
-	 	}
-
-	 	/* Display Dropdown when clicked on Parent Lable */
-	 	[id^=drop]:checked+ul {
-	 		display: block;
-	 	}
-
-	 	/* Change menu item's width to 100% */
-	 	nav ul li {
-	 		display: block;
-	 		width: 100%;
-	 	}
-
-	 	nav ul ul .toggle,
-	 	nav ul ul a {
-	 		padding: 0 40px;
-	 	}
-
-	 	nav ul ul ul a {
-	 		padding: 0 80px;
-	 	}
-
-	 	nav a:hover,
-	 	nav ul ul ul a {
-	 		background-color: #000000;
-	 	}
-
-	 	nav ul li ul li .toggle,
-	 	nav ul ul a,
-	 	nav ul ul ul a {
-	 		padding: 10px 10px;
-	 		color: #FFF;
-	 		font-size: 1em;
-	 	}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.example {
+		background: green;
+	}
+}
 
 
-	 	nav ul li ul li .toggle,
-	 	nav ul ul a {
-	 		background-color: #4b4b4b83;
-	 	}
+@media all and (max-width : 768px) {
+	#logo * {
+		display: none;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
 
-	 	/* Hide Dropdowns by Default */
-	 	nav ul ul {
-	 		float: none;
-	 		position: static;
-	 		color: #ffffffe8;
-	 		/* has to be the same number as the "line-height" of "nav a" */
-	 	}
+	nav {
+		margin: 0;
+	}
 
-	 	/* Hide menus on hover */
-	 	nav ul ul li:hover>ul,
-	 	nav ul li:hover>ul {
-	 		display: none;
-	 	}
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle+a,
+	.menu {
+		display: none;
+	}
 
-	 	/* Fisrt Tier Dropdown */
-	 	nav ul ul li {
-	 		display: block;
-	 		width: 100%;
-	 	}
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #03030375;
+		padding: 0.25em;
+		color: #FFF;
+		font-size: 2em;
+		text-decoration: none;
+		border: none;
+	}
 
-	 	nav ul ul ul li {
-	 		position: static;
-	 		/* has to be the same number as the "width" of "nav ul ul li" */
-	 	}
-	 }
+	.toggle:hover {
+		background-color: #ffffff13;
+	}
 
-	 @media all and (max-width : 330px) {
-	 	nav ul li {
-	 		display: block;
-	 		width: 94%;
-	 	}
-	 }
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked+ul {
+		display: block;
+	}
 
-	 .main {
-	 	max-width: 100vw;
-	 	overflow: hidden;
-	 	display: grid;
-	 	grid-template-areas:
-	 		"l i i r "
-	 		"a a a a"
-	 		"b b b b"
-	 		"f f f f";
-	 }
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
 
-	 section#i {
-	 	grid-area: i;
-	 	height: 20vh;
-	 	text-align: center;
-	 	margin-top: 3em;
-	 	max-height: 20vh;
-	 }
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
 
-	 .Logo {
-	 	text-align: center;
-	 	display: inline;
-	 	vertical-align: middle;
-	 }
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
 
-	 .intro img {
-	 	text-align: center;
-	 	width: 6em;
-	 	height: 6em;
-	 }
+	nav a:hover,
+	nav ul ul ul a {
+		background-color: #000000;
+	}
 
-	 section#r {
-	 	grid-area: r;
-	 	margin-top: 2em;
-	 	max-height: 20vh;
-	 }
-
-	 section#l {
-	 	grid-area: l;
-	 	margin-top: 2em;
-	 	max-height: 20vh;
-	 }
-
-	 section#a {
-	 	top: 20vh;
-	 	grid-area: a;
-	 	height: 85vh;
-	 }
-
-	 section#b {
-	 	grid-area: b;
-	 	height: 2vh;
-	 }
-
-	 .categories {
-	 	overflow: hidden;
-	 	position: relative;
-	 	display: flexbox;
-	 	margin: 0;
-	 	padding: 0;
-	 	width: 100%;
-	 	object-fit: cover
-	 }
-
-	 .categories a {
-	 	padding: 0;
-	 	margin: 0;
-	 }
-
-	 figure {
-	 	display: block;
-	 	overflow: hidden;
-	 	position: relative;
-	 	display: block;
-	 	min-width: 100%;
-	 	height: 15vh;
-	 	margin: 0em;
-	 	padding: 0em;
-	 	transition: all 0.6S;
-	 }
-
-	 figure:hover {
-	 	height: 40vh;
-	 }
-
-	 .fig {
-	 	display: flex;
-	 	min-width: 100%;
-	 	height: 15vh;
-	 	object-position: center;
-	 	object-fit: cover;
-	 	transition: all 0.6S;
-	 }
-
-	 .fig:hover {
-	 	height: 40vh;
-	 }
+	nav ul li ul li .toggle,
+	nav ul ul a,
+	nav ul ul ul a {
+		padding: 10px 10px;
+		color: #FFF;
+		font-size: 1.2em;
+	}
 
 
-	 figcaption {
-	 	display: block;
-	 	position: relative;
-	 	width: fit-content;
-	 	top: -10vh;
-	 	left: 1em;
-	 	font-size: 2.2em;
-	 	z-index: 10;
-	 }
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #4b4b4b83;
+	}
 
-	 figcaption:hover {
-	 	top: inherit;
-	 }
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position: static;
+		color: #ffffffe8;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
 
-	 .darken {
-	 	filter: brightness (0.3);
-	 }
+	/* Hide menus on hover */
+	nav ul ul li:hover>ul,
+	nav ul li:hover>ul {
+		display: none;
+	}
 
-	 .darken:hover {
-	 	filter: brightness (0.8);
-	 }
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
 
-	 .blur {
-	 	filter: blur(15px);
-	 }
-
-	 .blur:hover {
-	 	filter: blur(0);
-	 }
-
-	 .mask {
-	 	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
-	 	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
-	 }
-
-	 .mask:hover {
-	 	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1) 100%);
-	 	mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 01) 100%);
-	 }
-
-	 section#b {
-	 	grid-area: b;
-	 }
-
-	 .footer {
-	 	grid-area: f;
-	 	background-color: #202020;
-	 	background-size: cover;
-	 	display: grid;
-	 	font-size: 0.9em;
-	 	grid-template-areas:
-	 		"ft fs fs "
-	 		"fm fa1 fa2"
-	 		"fc fc fc ";
-	 }
-
-	 section#ft {
-	 	grid-area: ft;
-	 	line-height: 1.5em;
-	 	text-align: left;
-	 	height: 1.5em;
-	 }
-
-	 section#fs {
-	 	grid-area: fs;
-	 	line-height: 1.5em;
-	 	text-align: left;
-	 	padding: 0.25em 1em;
-	 }
-
-	 .social {
-	 	grid-area: fs;
-	 	line-height: 1.5em;
-	 	text-align: left;
-	 	padding: 0.25em;
-	 }
-
-	 section#fm {
-	 	position: static;
-	 	grid-area: fm;
-	 	width: 50vw;
-	 	margin-top: 0.25em;
-	 	top: 0px;
-	 	left: 0px;
-	 }
-
-	 section#fa1 {
-	 	grid-area: fa1;
-	 	width: 25vw;
-	 	text-align: left;
-	 }
-
-	 section#fa2 {
-	 	grid-area: fa2;
-	 	width: 25vw;
-	 	text-align: left;
-	 }
-
-	 .left {
-	 	text-align: left;
-	 }
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */
+	}
+}
 
 
-	 #fc {
-	 	grid-area: fc;
-	 	text-align: center;
-	 	height: 1.5em;
-	 	padding: 0.25;
-	 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.example {
+		background: blue;
+	}
+}
 
-	 #overlay {
-	 	overflow: hidden;
-	 	position: fixed;
-	 	display: none;
-	 	width: 90vw;
-	 	height: 90vh;
-	 	top: 0;
-	 	left: 0;
-	 	right: 0;
-	 	bottom: 0;
-	 	background-color: rgba(0, 0, 0, 0.5);
-	 	z-index: 2;
-	 	cursor: pointer;
-	 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.example {
+		background: orange;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.example {
+		background: pink;
+	}
+}
