@@ -19,7 +19,7 @@ body {
 	background-size: cover;
 	font-size: 2.8vmin;
 	line-height: 1.25em;
-	color: #ffffff;
+	color: #ebebeb;
 	margin: 0;
 	padding: 0px;
 	word-wrap: break-word !important;
@@ -32,7 +32,6 @@ h1 {
 	color: #FFF;
 	vertical-align: middle;
 	text-decoration: none;
-
 	font-family: OSL;
 }
 
@@ -47,7 +46,6 @@ h2 {
 	color: #FFF;
 	vertical-align: middle;
 	padding: 0.5em;
-
 	font-family: OSL;
 
 }
@@ -61,11 +59,11 @@ h3 {
 }
 
 h3 a {
-	color: #FFF;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 a {
-	color: #FFF;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -145,7 +143,7 @@ nav ul li {
 /* Styling the links */
 nav a {
 	display: block;
-	color: rgba(230, 230, 230, 0.897);
+	color: rgba(255, 255, 255, 0.85);
 	font-size: 1em;
 	text-decoration: none;
 	padding: 0.25em 1em 0.25em 1em;
@@ -319,19 +317,13 @@ figcaption:hover {
 	top: inherit;
 }
 
-.darken {
-	filter: brightness (0.3);
-}
-
-.darken:hover {
-	filter: brightness (0.8);
-}
-
 .blur {
+	filter: brightness (0.3);
 	filter: blur(15px);
 }
 
 .blur:hover {
+	filter: brightness (0.8);
 	filter: blur(0);
 }
 
