@@ -1,12 +1,13 @@
 @font-face {
-	font-family: OpenSansL;
-	src: url("https://www.designdata.ch/fonts/OpenSans-Light.ttf") format("truetype");
+	font-family: OSL;
+	src: url("OSL.ttf") format("truetype");
 	font-weight: normal;
+	font-display: swap;
 }
 
 * {
 	box-sizing: border-box;
-	font-family: OpenSansL;
+	font-family: OSL;
 	padding: 0px;
 	margin: 0px;
 	text-decoration: none;
@@ -22,7 +23,7 @@ body {
 	margin: 0;
 	padding: 0px;
 	word-wrap: break-word !important;
-	font-family: OpenSansL;
+	font-family: OSL;
 }
 
 h1 {
@@ -31,8 +32,8 @@ h1 {
 	color: #FFF;
 	vertical-align: middle;
 	text-decoration: none;
-	
-	font-family: OpenSansL;
+
+	font-family: OSL;
 }
 
 figcaption {
@@ -46,8 +47,8 @@ h2 {
 	color: #FFF;
 	vertical-align: middle;
 	padding: 0.5em;
-	
-	font-family: OpenSansL;
+
+	font-family: OSL;
 
 }
 
@@ -57,8 +58,6 @@ h3 {
 	text-align: left;
 	color: #FFF;
 	padding: 0.25em 1em;
-	font-weight: lighter;
-
 }
 
 h3 a {
