@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'OpenSans-Light';
+	font-family: OpenSansL;
 	src: url("https://www.designdata.ch/fonts/OpenSans-Light.ttf") format("truetype");
 	font-weight: normal;
 }
 
 * {
 	box-sizing: border-box;
-	font-family: 'OpenSans-Light';
+	font-family: OpenSansL;
 	padding: 0px;
 	margin: 0px;
 	text-decoration: none;
@@ -22,7 +22,7 @@ body {
 	margin: 0;
 	padding: 0px;
 	word-wrap: break-word !important;
-	font-family: 'OpenSans-Light';
+	font-family: OpenSansL;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 	vertical-align: middle;
 	text-decoration: none;
 	
-	font-family: 'OpenSans-Light';
+	font-family: OpenSansL;
 }
 
 figcaption {
@@ -47,7 +47,7 @@ h2 {
 	vertical-align: middle;
 	padding: 0.5em;
 	
-	font-family: "OpenSans-Light";
+	font-family: OpenSansL;
 
 }
 
