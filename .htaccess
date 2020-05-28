@@ -1,0 +1,5 @@
+<IfModule mod_headers.c>
+    SetEnvIf Origin "https://(www|shop).designdata.ch)$" ACAO=$0
+    Header set Access-Control-Allow-Origin "%{ACAO}e" env=ACAO
+    Header set Access-Control-Allow-Methods "GET"
+</IfModule>
