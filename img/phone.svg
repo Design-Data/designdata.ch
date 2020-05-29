@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="phone.svg"
+   id="svg6"
+   version="1.1"
+   height="18px"
+   width="18px"
+   fill="white"
+   viewBox="0 0 24 24">
+  <title
+     id="title20">phone</title>
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>phone</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:cy="6.9666851"
+     inkscape:cx="15.646414"
+     inkscape:zoom="33.14786"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:showpageshadow="false"
+     showborder="true"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="480"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#008205"
+     pagecolor="#ffffff" />
+  <path
+     id="path2"
+     fill="none"
+     d="M0 0h24v24H0V0z" />
+  <path
+     style="stroke-width:0.999999"
+     id="path4"
+     d="M 21.64847,16.366362 18.254974,15.978914 C 17.44,15.885383 16.638386,16.165957 16.063896,16.740451 l -2.45828,2.458294 C 9.8246723,17.274862 6.7251004,14.188634 4.8012283,10.39431 L 7.2728696,7.9226555 C 7.8473593,7.3481627 8.1279239,6.546545 8.0344024,5.7315669 L 7.6469559,2.3647724 C 7.4866331,1.0153824 6.3510141,0 4.9882713,0 H 2.6769526 C 1.1672474,0 -0.0886137,1.2558677 0.00490787,2.7655812 0.71299973,14.175274 9.8380332,23.286996 21.234303,23.995091 c 1.509706,0.09353 2.765567,-1.162346 2.765567,-2.67206 v -2.31133 c 0.01335,-1.349391 -1.002018,-2.485015 -2.3514,-2.645339 z" />
+</svg>
