@@ -17,9 +17,9 @@ body {
 	background-image: linear-gradient(to right, rgba(9, 87, 13, 0.377) 0%, rgba(0, 103, 134, 0.336) 51%, rgba(13, 26, 143, 0.288) 100%);
 	background-color: #000000;
 	background-size: cover;
-	font-size: 2.8vmin;
+	font-size: 2.5vmin;
 	line-height: 1.25em;
-	color: #ebebeb;
+	color: #ebebebd8;
 	margin: 0;
 	padding: 0px;
 	word-wrap: break-word !important;
@@ -29,24 +29,25 @@ body {
 h1 {
 	font-size: 2.5em;
 	text-align: center;
-	color: #FFF;
 	vertical-align: middle;
 	text-decoration: none;
-	font-family: OSL;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 figcaption {
 	font-size: 3em;
 	text-decoration: none;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
-	color: #FFF;
 	vertical-align: middle;
 	padding: 0.5em;
 	font-family: OSL;
+	font-weight: normal;
+	color: rgba(255, 255, 255, 0.85);
 
 }
 
@@ -54,8 +55,8 @@ h3 {
 	font-size: 1.25em;
 	line-height: 1.5em;
 	text-align: left;
-	color: #FFF;
 	padding: 0.25em 1em;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 h3 a {
@@ -82,33 +83,29 @@ nav {
 	z-index: 10;
 	height: 1.5em;
 	width: 100vw;
-	top: 0em;
-	left: 0em;
+	top: 0;
+	left: 0;
 	margin: 0;
-	padding: 0em;
-	background-color: #03030375;
-}
-
-#logo {
-	display: block;
-	padding: 0em;
-	position: fixed;
-	top: 0em;
-	left: 0.25em;
-	font-size: 1em;
+	padding: 0;
+	background-color: #00000083;
 }
 
 .toplogo {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: inline-block;
 	height: 1.5em;
 	width: 1.5em;
-	overflow: hidden;
+	padding: 0;
 }
 
 .toplogobrand {
 	position: fixed;
 	top: 0em;
-	left: 2em;
+	left: 0em;
 	font-size: 1em;
+	padding: 0.25em 0.5em 0.25em 1.75em;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -158,6 +155,7 @@ nav ul li ul li:hover {
 /* Background color change on Hover */
 nav a:hover {
 	background-color: #f1f1f11c;
+	color: rgb(255, 255, 255);
 }
 
 /* Hide Dropdowns by Default
@@ -218,9 +216,9 @@ li>a:only-child:after {
 section#i {
 	grid-area: i;
 	height: 20vh;
+	width: 50vw;
 	text-align: center;
-	margin-top: 3em;
-	max-height: 20vh;
+	margin-top: 2.5em;
 }
 
 .Logo {
@@ -231,20 +229,29 @@ section#i {
 
 .intro img {
 	text-align: center;
-	width: 6em;
-	height: 6em;
+	width: 2em;
+	height: 2em;
 }
 
 section#r {
 	grid-area: r;
-	margin-top: 2em;
-	max-height: 20vh;
+	margin: 2em 2em 0em 0em;
+	box-shadow: 0 0 20px #0000008c;
+
+}
+
+section#r:hover {
+	grid-area: r;
+	margin: 2em 2em 0em 0em;
+	box-shadow: 0 0 20px #ffffff25;
+
 }
 
 section#l {
 	grid-area: l;
 	margin-top: 2em;
 	max-height: 20vh;
+	width: 25vw;
 }
 
 section#a {
@@ -282,11 +289,12 @@ figure {
 	height: 15vh;
 	margin: 0em;
 	padding: 0em;
-	transition: all 0.6S;
+	transition: all 0.3S;
 }
 
 figure:hover {
 	height: 40vh;
+	transition: all 0.3S ease-in;
 }
 
 .fig {
@@ -295,47 +303,38 @@ figure:hover {
 	height: 15vh;
 	object-position: center;
 	object-fit: cover;
-	transition: all 0.6S;
+	transition: all 0.3S ease-in;
 }
 
 .fig:hover {
 	height: 40vh;
+	transition: all 0.6S ease-in;
 }
 
 
 figcaption {
 	display: block;
-	position: relative;
+	position: absolute;
 	width: fit-content;
-	top: -10vh;
+	top: 50%;
 	left: 1em;
 	font-size: 2.2em;
-	z-index: 10;
+
 }
 
-figcaption:hover {
-	top: inherit;
-}
 
 .blur {
-	filter: brightness (0.3);
+	filter: brightness (0.2);
 	filter: blur(15px);
+	transition: all 0.3s ease-in;
 }
 
 .blur:hover {
-	filter: brightness (0.8);
+	filter: brightness (1);
 	filter: blur(0);
+	transition: all 0.3s ease-in;
 }
 
-.mask {
-	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
-	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1) 100%);
-}
-
-.mask:hover {
-	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1) 100%);
-	mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 01) 100%);
-}
 
 section#b {
 	grid-area: b;
@@ -346,10 +345,10 @@ section#b {
 	background-color: #03030375;
 	background-size: cover;
 	display: grid;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	grid-template-areas:
-		"ft fs fs "
-		"fm fa1 fa2"
+		"ft ft ft "
+		"fa1 fa1 fa1"
 		"fc fc fc ";
 }
 
@@ -361,65 +360,42 @@ section#ft {
 }
 
 section#fs {
-	grid-area: fs;
+
 	line-height: 1.5em;
-	text-align: left;
+
 	padding: 0.25em 1em;
-}
-
-.social {
-	grid-area: fs;
-	line-height: 1.5em;
-	text-align: left;
-	padding: 0.25em;
-}
-
-section#fm {
-	position: static;
-	grid-area: fm;
-	width: 50vw;
-	margin-top: 0.25em;
-	top: 0px;
-	left: 0px;
 }
 
 section#fa1 {
 	grid-area: fa1;
-	width: 25vw;
-	text-align: left;
-}
-
-section#fa2 {
-	grid-area: fa2;
-	width: 25vw;
-	text-align: left;
-}
-
-.left {
+	margin-top: 1.2;
+	height: 7.2em;
+	line-height: 1.2em;
+	width: 100vw;
 	text-align: left;
 }
 
 
 #fc {
+	display: inline-table;
+	position: relative;
+	bottom: 0px;
 	grid-area: fc;
 	text-align: center;
-	height: 1.5em;
-	padding: 0.25;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
 }
 
-#overlay {
-	overflow: hidden;
-	position: fixed;
-	display: none;
-	width: 90vw;
-	height: 90vh;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 2;
-	cursor: pointer;
+.mask {
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+}
+
+.mask:hover {
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* Media Queries
