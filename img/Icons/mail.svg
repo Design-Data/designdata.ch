@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="mail.svg"
+   id="svg6"
+   version="1.1"
+   width="18"
+   viewBox="0 0 18 18"
+   height="18">
+  <title
+     id="title22">mail to</title>
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>mail to</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:cy="4.575078"
+     inkscape:cx="0.24398607"
+     inkscape:zoom="22.627417"
+     inkscape:snap-page="true"
+     inkscape:showpageshadow="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox="true"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="480"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     id="path2"
+     fill="none"
+     d="M 0,0 H 24 V 24 H 0 Z" />
+  <path
+     sodipodi:nodetypes="ssssssssscccccccscc"
+     style="fill:#ffffff;stroke-width:1"
+     id="path4"
+     d="M 18,4.4053308 C 18,3.5292739 17.19,2.8125 16.2,2.8125 H 1.8 C 0.81000003,2.8125 0,3.5292739 0,4.4053308 v 9.5569842 c 0,0.876058 0.81000003,1.592831 1.8,1.592831 h 14.4 c 0.99,0 1.8,-0.716773 1.8,-1.592831 z m -1.8,0 L 9.0625004,10.449908 1.8,4.4053308 Z m 0,9.5569842 H 1.8 V 5.9981616 c 0,0 6.6361296,6.0591624 7.2625004,6.0445764 C 9.6617426,12.028784 16.2,5.9981616 16.2,5.9981616 Z" />
+</svg>
